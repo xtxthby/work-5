@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-        <header class="border-header">
+    <header class="border-header">
             <div class="container site-auth">
                 <nav class="site-auth">
                     <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
@@ -37,17 +37,17 @@
                     </li>
                 </ul>
             </div>
-        </header>
-        <main>
+    </header>
+    <main>
             <!--Шапка-->
-            <section class="hero overlya">
+        <section class="hero overlya">
                 <div class="container">
                     <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                     <button type="button" class="button-title">Замовити послугу</button>
                 </div>
-            </section>
+        </section>
             <!--Особливості-->
-            <section class="section">
+        <section class="section">
                 <div class="container">
                     <h2 class="visually-hidden">Наші переваги</h2>
                     <ul class="benefit list">
@@ -89,20 +89,35 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+        </section>
             <!--Чим займаємося-->
-            <section class="work">
+        <section class="work">
                 <div class="container">
                     <h2 class="work-title">Чим ми займаємося</h2>
                     <ul class="work-flex list">
-                        <li class="position"><img src="./images/img.jpg" alt="Програмування" width="370"></li>
-                        <li class="position"><img src="./images/img1.jpg" alt="Дизайн" width="370"></li>
-                        <li class="position"><img src="./images/img2.jpg" alt="Креслення" width="370"></li>
+                        <li class="position">
+                            <div class="over">
+                            <img src="./images/img.jpg" alt="Програмування" width="370">
+                            <p class="over-title">Десктопні додатки</p>
+                            </div>
+                        </li>
+                        <li class="position">
+                            <div class="over">
+                            <img src="./images/img1.jpg" alt="Дизайн" width="370">
+                            <p class="over-title">Мобільні додатки</p>
+                            </div>
+                        </li>
+                        <li class="position">
+                            <div class="over">
+                            <img src="./images/img2.jpg" alt="Креслення" width="370">
+                            <p class="over-title">Дизайнерські рішення</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </section>
+        </section>
             <!--Наша команда-->
-            <section class="section team">
+        <section class="section team">
                 <div class="container">
                     <h2 class="team-title">Наша команда</h2>
                     <ul class="team-carta list">
@@ -256,9 +271,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
+        </section>
             <!--Постійні клієнти-->
-            <section class="section">
+        <section class="section">
                 <div class="container">
                     <h2 class="client-title">Постійні клієнти</h2>
                     <ul class="logo-client list">
@@ -306,10 +321,10 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-        </main>
+        </section>
+    </main>
         <!--Футер-->
-        <footer class="footer">
+    <footer class="footer">
             <div class="container logo-social">
                 <div class="blok-footer">
                     <a href="./index.html" class="logo-studio"><span class="web">Web</span>Studio</a>
@@ -355,6 +370,17 @@
                     </ul>
                 </div>
             </div>
-        </footer>
+    </footer>
+        <!--Модалка-->
+    <div class="backdrop is-nidde" data-moda>
+        <div class="modal">
+            <button class="close" data-modal-close>
+              <svg class="modal-close" width="18" height="18">
+                  <use href="./images/icons.svg/symbol-defs1.svg#icon-close-black-18dpsvg"></use>
+              </svg>
+            </button>
+        </div>
+    </div>
+    <script href="./js/modal.js"></script>
 </body>
 </html>
